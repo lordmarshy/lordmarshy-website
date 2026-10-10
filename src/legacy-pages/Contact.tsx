@@ -3,7 +3,6 @@ import PageHolder from "@/components/PageHolder";
 import GlassIcons from "@/components/GlassIcons";
 import { FiGithub, FiFileText } from 'react-icons/fi';
 import { LiaLinkedin } from "react-icons/lia";
-import cvPdf from '@/assets/Guy_Marshman_CV.pdf';
 // import GlassPanel from "@/components/GlassPanel";
 
 const Contact = () => {
@@ -16,7 +15,7 @@ const Contact = () => {
             label: 'Download CV',
             onClick: () => {
                 const link = document.createElement('a');
-                link.href = cvPdf;
+                link.href = '/assets/Guy_Marshman_CV.pdf';
                 link.download = 'Guy_Marshman_Full-Stack_Software_Dev_CV.pdf';
                 link.click();
             }

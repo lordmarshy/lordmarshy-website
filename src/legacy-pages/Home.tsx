@@ -2,11 +2,7 @@ import LightRays from "@/components/LightRays";
 import PageHolder from "@/components/PageHolder";
 import IconSet, { devicon } from "@/components/IconSet";
 import type { IconSetItem } from "@/components/IconSet";
-import inkLogo from '../assets/ink_logo.png'
-import neonLogo from '../assets/neon_logo.png'
 import ProfileCard from "@/components/ProfileCard";
-import profilePic_nobg from '../assets/profile_pic_nobg.png';
-import lordMarshy_s from '../assets/Lord_Marshy_Logo_small2.png'
 import { Button } from "@/components/ui/button"
 import { ExternalLink, SquareTerminal, X, Brain } from "lucide-react"
 // import { LiaLinkedin } from "react-icons/lia";
@@ -22,6 +18,11 @@ import {
 import DemoPage from "@/certificates/page";
 import { useMediaQuery } from '../hooks/windowWidth';
 import GlassPanel from "@/components/GlassPanel";
+
+const inkLogo = '/assets/ink_logo.png';
+const neonLogo = '/assets/neon_logo.png';
+const profilePic_nobg = '/assets/profile_pic_nobg.png';
+const lordMarshy_s = '/assets/Lord_Marshy_Logo_small2.png';
 
 interface StartAppAction {
   label: string;
