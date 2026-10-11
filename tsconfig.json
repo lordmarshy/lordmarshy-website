@@ -37,9 +37,6 @@
     "src/**/*.tsx"
   ],
   "exclude": [
-    "node_modules",
-    "src/legacy-pages/**",
-    "src/App.tsx",
-    "src/main.tsx"
+    "node_modules"
   ]
 }

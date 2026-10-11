@@ -1,3 +1,5 @@
+"use client";
+
 import { GridScan } from "@/components/GridScan";
 import PageHolder from "@/components/PageHolder";
 import GlassIcons from "@/components/GlassIcons";

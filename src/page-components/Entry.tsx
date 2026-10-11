@@ -1,11 +1,13 @@
+"use client";
+
 import LetterGlitch from "@/components/LetterGlitch";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import PageHolder from "@/components/PageHolder";
 import { Button } from "@/components/ui/button"
 import { GrCodeSandbox } from "react-icons/gr";
-import Cubes from '../components/Cubes';
+import Cubes from "@/components/Cubes";
 import { useState } from "react";
-import { useMediaQuery } from '../hooks/windowWidth';
+import { useMediaQuery } from "@/hooks/windowWidth";
 
 const CubeHolder = () => {
     const isSm = useMediaQuery("(min-width: 640px)");
@@ -90,7 +92,7 @@ const Entry = () => {
                 active:bg-[rgba(97,220,163,0.6)] active:scale-[1.01]"
                 variant="outline"
             >
-                <Link to="/home" className="flex flex-row items-center gap-4 ">
+                <Link href="/home" className="flex flex-row items-center gap-4 ">
                     <p className="p2 text-2xl! text-[#61b3dc] select-none">Explore</p>
                     <GrCodeSandbox className="size-7 text-[#61b3dc] stroke-[2]"/>
                 </Link>

@@ -1,3 +1,5 @@
+"use client";
+
 import PageHolder from "@/components/PageHolder";
 import { GridScan } from "@/components/GridScan";
 import DemoPage from "@/certificates/page";

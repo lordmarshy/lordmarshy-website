@@ -1,3 +1,5 @@
-export default function MigrationPlaceholderPage() {
-  return <main><h1>Migration in progress.</h1></main>;
+import Entry from "@/page-components/Entry";
+
+export default function EntryPage() {
+  return <Entry />;
 }

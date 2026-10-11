@@ -1,3 +1,5 @@
+"use client";
+
 import LightRays from "@/components/LightRays";
 import PageHolder from "@/components/PageHolder";
 import IconSet, { devicon } from "@/components/IconSet";
@@ -16,7 +18,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import DemoPage from "@/certificates/page";
-import { useMediaQuery } from '../hooks/windowWidth';
+import { useMediaQuery } from "@/hooks/windowWidth";
 import GlassPanel from "@/components/GlassPanel";
 
 const inkLogo = '/assets/ink_logo.png';

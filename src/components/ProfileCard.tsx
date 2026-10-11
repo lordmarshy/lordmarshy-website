@@ -1,3 +1,5 @@
+"use client";
+
 // Opensource improvement - ad ability to set card size
 
 import React, { useEffect, useRef, useCallback, useMemo } from 'react';

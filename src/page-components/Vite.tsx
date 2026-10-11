@@ -1,5 +1,7 @@
-import reactLogo from '../assets/react.svg';
-import viteLogo from '../assets/vite.svg';
+"use client";
+
+const reactLogo = "/assets/react.svg";
+const viteLogo = "/assets/vite.svg";
 import { useState } from 'react'
 
 const Vite = () => {

@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 // add prop open source - change side of icons | add an onlick option
 
