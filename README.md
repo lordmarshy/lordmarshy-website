@@ -4,11 +4,11 @@ A Next.js portfolio for Guy Marshman.
 
 ## Local development
 
-Use Node.js 20.9 or newer.
+Use Bun 1.3.11. Node.js 20.9 or newer is still required by Next.js and Vercel's production runtime.
 
 ```bash
-npm install
-npm run dev
+bun install
+bun run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
@@ -16,9 +16,9 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Quality checks
 
 ```bash
-npm run lint
-npm run build
-npm run start
+bun run lint
+bun run build
+bun run start
 ```
 
 The production build is the same build Vercel runs.
