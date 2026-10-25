@@ -1,0 +1,13 @@
+'use client';
+import * as React from "react";
+import { Select as Primitive } from "radix-ui";
+import { Check, ChevronDown } from "lucide-react";
+import { cn } from "@/lib/utils";
+export function Select(props: React.ComponentProps<typeof Primitive.Root>) { return <Primitive.Root {...props} />; }
+export function SelectValue(props: React.ComponentProps<typeof Primitive.Value>) { return <Primitive.Value data-slot="select-value" {...props} />; }
+export function SelectTrigger({className,children,...props}: React.ComponentProps<typeof Primitive.Trigger>) { return <Primitive.Trigger data-slot="select-trigger" data-ds-control className={cn("type-small flex min-h-11 min-w-11 items-center justify-between gap-4 rounded-ds-sm border border-ds-control-border bg-ds-raised px-4 text-ds-fg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ds-focus disabled:opacity-50",className)} {...props}>{children}<Primitive.Icon data-slot="select-icon"><ChevronDown className="size-4" /></Primitive.Icon></Primitive.Trigger>; }
+export function SelectContent({className,children,...props}: React.ComponentProps<typeof Primitive.Content>) { return <Primitive.Portal><Primitive.Content data-slot="select-content" className={cn("type-small z-50 rounded-ds-md border border-ds-control-border bg-ds-raised p-1 text-ds-fg",className)} {...props}><Primitive.Viewport data-slot="select-viewport">{children}</Primitive.Viewport></Primitive.Content></Primitive.Portal>; }
+export function SelectItem({className,children,...props}: React.ComponentProps<typeof Primitive.Item>) { return <Primitive.Item data-slot="select-item" className={cn("relative flex min-h-11 items-center rounded-ds-sm px-4 pr-10 outline-none data-[highlighted]:bg-ds-surface data-[disabled]:opacity-50",className)} {...props}><Primitive.ItemText>{children}</Primitive.ItemText><Primitive.ItemIndicator data-slot="select-indicator" className="absolute right-4"><Check className="size-4" /></Primitive.ItemIndicator></Primitive.Item>; }
+export function SelectGroup(props: React.ComponentProps<typeof Primitive.Group>) { return <Primitive.Group data-slot="select-group" {...props} />; }
+export function SelectLabel({className,...props}: React.ComponentProps<typeof Primitive.Label>) { return <Primitive.Label data-slot="select-label" className={cn("type-label px-4 py-2 text-ds-fg-muted",className)} {...props} />; }
+export function SelectSeparator({className,...props}: React.ComponentProps<typeof Primitive.Separator>) { return <Primitive.Separator data-slot="select-separator" className={cn("my-1 h-px bg-ds-border",className)} {...props} />; }

@@ -48,3 +48,9 @@
 @utility type-body { font-family: var(--font-ds-sans); font-size: 1rem; line-height: 1.5rem; font-weight: 400; }
 @utility type-small { font-family: var(--font-ds-sans); font-size: 0.875rem; line-height: 1.25rem; font-weight: 400; }
 @utility type-label { font-family: var(--font-ds-mono); font-size: 0.75rem; line-height: 1rem; font-weight: 500; letter-spacing: 0.08em; }
+
+/* Legacy unlayered heading and paragraph styles otherwise override utility-layer typography. */
+.ds-title { @apply type-h3; }
+.ds-copy { @apply type-small; }
+.ds-link, .ds-link:hover { color: var(--color-ds-secondary); }
+.ds-link[aria-current="page"] { color: var(--color-ds-accent-fg); }

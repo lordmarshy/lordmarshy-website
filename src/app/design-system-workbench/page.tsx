@@ -2,6 +2,8 @@
 
 import { notFound } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { ActionExamples } from "./actions";
+import { LibraryExamples } from "./library";
 
 const colors = [
   ["Canvas", "--color-ds-canvas"], ["Surface", "--color-ds-surface"],
@@ -130,7 +132,6 @@ function Workbench() {
 
   return (
     <main ref={root} className="min-h-screen bg-ds-canvas px-4 pb-24 pt-28 text-ds-fg sm:px-8">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" />
       <div className="mx-auto flex max-w-6xl flex-col gap-8">
         <header className="border border-dashed border-ds-border bg-ds-surface p-6">
           <div className="type-label text-ds-accent">DEVELOPMENT ONLY // DESIGN SYSTEM</div>
@@ -195,6 +196,8 @@ function Workbench() {
             </div>
           </div>
         </section>
+        <ActionExamples />
+        <LibraryExamples />
         <section aria-labelledby="tokens">
           <div id="tokens" role="heading" aria-level={2} className="type-h2 mb-4">Token reference</div>
           <div className="type-small mb-4 text-ds-fg-muted">Color variables and their live values are shown in Color roles. These entries cover the other foundation names. Proposed names have no value yet and may change during review.</div>
