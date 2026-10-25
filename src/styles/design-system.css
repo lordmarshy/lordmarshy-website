@@ -1,0 +1,50 @@
+/* The primitive palette is separate from the roles used by components. */
+@theme static {
+  --color-ds-primitive-canvas: #06110f;
+  --color-ds-primitive-surface: #10231c;
+  --color-ds-primitive-raised: #19342a;
+  --color-ds-primitive-white: #f0f8f3;
+  --color-ds-primitive-muted: #b1c9bb;
+  --color-ds-primitive-green: #348256;
+  --color-ds-primitive-control-border: #3c9061;
+  --color-ds-primitive-leaf: #34823b;
+  --color-ds-primitive-teal: #348270;
+  --color-ds-primitive-yellow-green: #4c8234;
+  --color-ds-primitive-blue-teal: #347a82;
+  --color-ds-primitive-neon-green: #00f17d;
+  --color-ds-primitive-electric-green: #00f22b;
+  --color-ds-primitive-aqua: #00f2cf;
+  --color-ds-primitive-lime: #31f200;
+  --color-ds-primitive-cyan: #00c6f2;
+  --color-ds-primitive-warning: #f2c14e;
+  --color-ds-primitive-error: #ff7a80;
+  --radius-ds-sm: 4px;
+  --radius-ds-md: 8px;
+}
+
+@theme static inline {
+  --color-ds-canvas: var(--color-ds-primitive-canvas);
+  --color-ds-surface: var(--color-ds-primitive-surface);
+  --color-ds-raised: var(--color-ds-primitive-raised);
+  --color-ds-fg: var(--color-ds-primitive-white);
+  --color-ds-fg-muted: var(--color-ds-primitive-muted);
+  --color-ds-border: var(--color-ds-primitive-green);
+  --color-ds-control-border: var(--color-ds-primitive-control-border);
+  --color-ds-accent: var(--color-ds-primitive-neon-green);
+  --color-ds-accent-fg: var(--color-ds-primitive-canvas);
+  --color-ds-secondary: var(--color-ds-primitive-cyan);
+  --color-ds-success: var(--color-ds-primitive-electric-green);
+  --color-ds-warning: var(--color-ds-primitive-warning);
+  --color-ds-error: var(--color-ds-primitive-error);
+  --color-ds-focus: var(--color-ds-primitive-neon-green);
+  --font-ds-sans: "Montserrat", sans-serif;
+  --font-ds-mono: "IBM Plex Mono", monospace;
+}
+
+@utility type-display { font-family: var(--font-ds-sans); font-size: 3rem; line-height: 3.5rem; font-weight: 700; }
+@utility type-h1 { font-family: var(--font-ds-sans); font-size: 2.25rem; line-height: 2.75rem; font-weight: 700; }
+@utility type-h2 { font-family: var(--font-ds-sans); font-size: 1.75rem; line-height: 2.25rem; font-weight: 600; }
+@utility type-h3 { font-family: var(--font-ds-sans); font-size: 1.375rem; line-height: 1.75rem; font-weight: 600; }
+@utility type-body { font-family: var(--font-ds-sans); font-size: 1rem; line-height: 1.5rem; font-weight: 400; }
+@utility type-small { font-family: var(--font-ds-sans); font-size: 0.875rem; line-height: 1.25rem; font-weight: 400; }
+@utility type-label { font-family: var(--font-ds-mono); font-size: 0.75rem; line-height: 1rem; font-weight: 500; letter-spacing: 0.08em; }
