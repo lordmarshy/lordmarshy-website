@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ArrowUpRight, Braces, Circle, Code2, ExternalLink, GraduationCap, Github, Layers3, Terminal } from "lucide-react";
 import DemoPage from "@/certificates/page";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog-old";
 
 const playgroundProjects = [
   { number: "02", name: "Mood Tracker", kind: "CLI / TUI experiment", description: "A mental-health tracker built as a full-screen terminal UI, with mood history saved locally in SQLite.", stack: "JavaScript / Node.js / React Ink / SQLite", href: "https://github.com/wobwobbird/Mood_Tracker", status: "ARCHIVED BUILD" },

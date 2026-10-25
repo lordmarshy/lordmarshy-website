@@ -6,14 +6,14 @@ import {
   ChevronsRight,
 } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button-old"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
+} from "@/components/ui/select-old"
 
 interface DataTablePaginationProps<TData> {
   table: Table<TData>

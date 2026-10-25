@@ -23,23 +23,23 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
+} from "@/components/ui/table-old"
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
   data: TData[]
 }
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button-old"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu-old"
 
 
-import { Input } from "@/components/ui/input"
+import { Input } from "@/components/ui/input-old"
 
 import { DataTablePagination } from "./pagination";
 
