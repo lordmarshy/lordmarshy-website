@@ -1,6 +1,5 @@
 'use client';
 
-import { notFound } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { ActionExamples } from "./actions";
 import { LibraryExamples } from "./library";
@@ -220,6 +219,5 @@ function Workbench() {
 }
 
 export default function DesignSystemWorkbenchPage() {
-  if (process.env.NODE_ENV === "production") notFound();
   return <Workbench />;
 }
