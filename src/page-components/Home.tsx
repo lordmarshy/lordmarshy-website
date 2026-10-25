@@ -5,7 +5,7 @@ import PageHolder from "@/components/PageHolder";
 import IconSet, { devicon } from "@/components/IconSet";
 import type { IconSetItem } from "@/components/IconSet";
 import ProfileCard from "@/components/ProfileCard";
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button-old"
 import { ExternalLink, SquareTerminal, X, Brain } from "lucide-react"
 // import { LiaLinkedin } from "react-icons/lia";
 import CircularText from "@/components/CircularText";
@@ -16,7 +16,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogDescription,
-} from "@/components/ui/dialog";
+} from "@/components/ui/dialog-old";
 import DemoPage from "@/certificates/page";
 import { useMediaQuery } from "@/hooks/windowWidth";
 import GlassPanel from "@/components/GlassPanel";

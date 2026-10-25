@@ -3,10 +3,10 @@
 import LetterGlitch from "@/components/LetterGlitch";
 import Link from "next/link";
 import PageHolder from "@/components/PageHolder";
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button-old"
 import { GrCodeSandbox } from "react-icons/gr";
 import Cubes from "@/components/Cubes";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useMediaQuery } from "@/hooks/windowWidth";
 
 const CubeHolder = () => {
@@ -30,18 +30,24 @@ const CubeHolder = () => {
     );
 };
 
+const tagLine = [
+    "Full-Stack Developer · React, Node & beyond",
+    "Building apps from idea to deployment",
+    "Full-Stack Developer · Problem solver & builder",
+    "Portfolio · Projects · Contact",
+    "See what I've been building",
+    "Projects, experience & how to get in touch"
+];
+
 const Entry = () => {
-    const [tagLineRandomNumber, _setTagLineRandomNumber] = useState(Math.floor(Math.random() * 6));
+    const [tagLineRandomNumber, setTagLineRandomNumber] = useState(0);
 
-    const tagLine = [
-        "Full-Stack Developer · React, Node & beyond",
-        "Building apps from idea to deployment",
-        "Full-Stack Developer · Problem solver & builder",
-        "Portfolio · Projects · Contact",
-        "See what I've been building",
-        "Projects, experience & how to get in touch"
-    ]
-
+    useEffect(() => {
+        const timer = window.setTimeout(() => {
+            setTagLineRandomNumber(Math.floor(Math.random() * tagLine.length));
+        }, 0);
+        return () => window.clearTimeout(timer);
+    }, []);
 
     return (
         <PageHolder 

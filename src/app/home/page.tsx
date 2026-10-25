@@ -1,5 +1,5 @@
-import Home from "@/page-components/Home";
+import BuilderConsoleHome from "@/page-components/BuilderConsoleHome";
 
 export default function HomePage() {
-  return <Home />;
+  return <BuilderConsoleHome />;
 }

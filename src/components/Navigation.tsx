@@ -42,12 +42,18 @@ export default function Navigation() {
                 className="select-none h-10 rotate-4 max-[600px]:hidden"
               />
             </Link>
-            <div className="select-none flex items-center gap-12">
+            <div className="select-none flex items-center gap-5 text-sm sm:gap-8 sm:text-base lg:gap-12">
               <Link
                 href="/home"
                 className={pathname === "/home" ? "[text-shadow:0_0_20px_rgba(97,220,163,1),0_0_25px_rgba(200,255,150,0.5)]" : ""}
               >
                 Home
+              </Link>
+              <Link
+                href="/old-home"
+                className={pathname === "/old-home" ? "[text-shadow:0_0_20px_rgba(97,220,163,1),0_0_25px_rgba(200,255,150,0.5)]" : ""}
+              >
+                Old Home
               </Link>
               <Link
                 href="/contact"
